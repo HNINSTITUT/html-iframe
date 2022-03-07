@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="style.css" />
+		<title> je me présente </title>
+	</head>
+	
+	<body>
+		<div id="blocpage"> <!-- permet d'englober toutes les parties de la page pour mieux agencer les blocs -->
+			<!-- définition de l'en-tête avec le menu de navigation -->
+			<header>
+				<div id="titre_principal">
+					<h1> <img src="images/tn_lettrej.jpg" alt="super logo" /> Logo </h1>
+					<h2> Biographie et récits </h2>
+				</div>
+				<nav>
+					<ul id="menuderoulant">
+						<li> <a href="bio.html" target="iframe_a"> ACCUEIL </a> </li>
+						<li> <a href="#"> BLOG 
+							<ul>
+								<li> <a href="music.html" target="iframe_a"> Musique </li>
+								<li> <a href="sport.html" target="iframe_a"> Sport </li>
+							</ul> </li>
+						<li> <a href="CV.html"target="iframe_a"> CV </a> </li>
+						<li> <a href="contact.html"target="iframe_a"> CONTACT </a> </li>
+					</ul>
+				</nav>
+			</header> 
+				
+			<!-- Mise en place du cadre central -->
+			<section> <HR>
+				<iframe src="bio.html" name="iframe_a" ></iframe>
+			</section>
+		
+			<!-- définition du pied de page -->
+			<footer> <HR>
+				<div class="bas_page1">
+					<h1> MES PHOTOS </h1>
+					<p>
+						<img src="images/tn_photo5.jpg" alt="5" />
+						<img src="images/tn_photo2.jpg" alt="2" />
+						<img src="images/tn_photo3.jpg" alt="3" />
+						<img src="images/tn_photo4.jpg" alt="4" />
+					</p>
+				</div>
+				<div class="bas_page2">
+					<h1> MES PERSONNALITES ET SERIES TELE </h1>
+					<!-- définition du tableau -->
+					<table>
+						<thead>
+							<tr>
+								<th> Personnalités </th>
+								<th> Series télé </th>
+							</tr>
+						</thead>
+						<tfoot>
+							<tr>
+								<th> <a href="https://www.facebook.com/HughJackman"> My favorite one </a> </th>
+								<th> <a href="http://the-big-bang-theory-streaming.net/"> My favorite one </a> </th>
+							</tr>
+						</tfoot>
+						<tbody>
+							<tr>
+								<td> <a href="https://www.facebook.com/MeganFox/?fref=ts"> Megan Fox </a> </td>
+								<td> <a href="http://www.greysanatomystreaming.fr/"> Grey's Anatomy </a> </td>
+							</tr>
+							<tr>
+								<td> <a href="https://www.facebook.com/cooper/?fref=ts"> Bradley Cooper </a> </td>
+								<td> <a href="http://www.seriefr.com/how-i-met-your-mother.html"> HIMYM </a> </td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

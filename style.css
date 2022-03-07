@@ -1,0 +1,353 @@
+body /*mise en forme : fond de page et centrage des blocs et homogénéisation du texte par défaut*/
+{
+	background-color : rgb(210,204,203);
+	width : 970px;
+	color : #181818;
+	font-family : Arial, sans-serif;
+	Margin : auto;
+}
+iframe
+{
+	width  : 970px;
+	height : 1000px;
+	border : none;
+}
+#blocpage 
+{
+	width : 970px;
+	margin : auto;
+}
+/*mise en forme de l'en-tête général à toutes les pages*/
+header
+{
+	border : 1px solid black;
+	border-radius : 5px;
+}
+#titre_principal
+{
+	display : inline-block;
+}
+header h1, article h1 
+{
+	color : black;
+	font-weight : bold;
+	font-family : "Trebuchet MS", Arial, sans-serif;
+	font-style : italic;
+	margin : 10px;
+}
+header h2
+{
+	color : black;
+	font-family : "Arial", sans-serif;
+	margin-left : 20px;
+	margin-top : 0px;
+	font-size : 1.2em;
+}
+nav
+{
+	display : inline-block;
+	text-align : right;
+	width : 750px;
+}
+nav ul
+{
+	list-style-type : none; /*enlever les puces de la liste*/
+}
+nav li
+{
+	display : inline-block;
+	margin-right : 20px;
+	font-family : "Times New Roman";
+}
+nav a
+{
+	color : black;
+	font-size : 1.2em;
+	text-decoration : none;
+}
+nav a:hover
+{
+	color : red;
+	font-weight : bold;
+	text-decoration : underline;
+}
+/*Mise en place du menu déroulant*/
+#menuderoulant li
+{
+	position : relative;
+}
+#menuderoulant ul li
+{
+	display:inherit;
+}
+#menuderoulant ul
+{
+	position : absolute;
+	z-index : 1000;
+	max-height :0;
+	left : 0;
+	right : 0;
+	overflow : hidden;
+}
+#menuderoulant li:hover ul
+{
+	max-height : 15em;
+	text-align : left;
+	border : 1px solid black;
+	padding : 5px 2px 5px 2px;
+	font-size : 1em;
+	width : 100px;
+	background-color : rgb(210,204,203);
+}
+/* mise en place de la banniere pour l'article du moment dans l'accueil*/
+#banniere 
+{
+	margin-top : 15px;
+	Height : 200px;
+	border-radius : 5px;
+	background : url('images/newyorkbanniere.jpg') no-repeat;/*mettre l'image en fond d'écran afin de caler le texte dessus directement*/
+	position : relative;
+	box-shadow : 0px 4px 4px #1c1a19;
+	margin-bottom : 25 px;
+	border : 3px solid black;
+}
+#banniere_description
+{
+	position : absolute;
+	bottom : 0px;
+	border-raidus : 0px 0px 5px 5px;
+	width : 99.7%;
+	height : 33px;
+	margin-bottom : 0px;
+	padding-top : 15px;
+	padding-left : 4px;
+	color : white;
+	background-color : rgba(24,24,24,0.8);
+}
+.bouton_rouge
+{
+	display : inline-block;
+	height : 30px;
+	position : absolute;
+	right : 5px;
+	bottom : 10px;
+	background-color : rgb(255,0,0);
+	border-radius : 15px;
+	text-align : center;
+	color : white;
+	font-size : 1em;
+	padding : 10px 8px 0px 8px;
+	text-decoration : none;
+	box-shadow : 2px 2px 2px rgb(147,13,13);
+}
+.bouton_rouge:hover
+{
+	box-shadow : 2px 2px 5px rgb(147,13,13) inset;
+}
+/*mise en forme général pour les sections, articles et aside*/
+section
+{
+	margin-top : 20px;
+	width : 100%;
+	position : relative;
+}
+article, aside
+{
+	display : inline-block;
+	vertical-align : top;
+	text-align : justify;
+}
+article
+{
+	width : 660px;
+	margin-right : 5px;
+}
+/* mise en forme description de l'auteur dans l'accueil*/
+#auteur
+{
+	width : 250px;
+	color : white;
+	background-color : grey;
+	padding-left : 10px;
+	padding-right : 10px;
+	border-radius : 5px;
+	box-shadow : 2px 2px 4px black
+}
+#photozozor, #logo
+{
+	text-align : center;
+}
+/*Mise en forme général pour toutes les pages du pied de page*/
+.bas_page1, .bas_page2
+{
+	display : inline-block;
+	vertical-align : top
+}
+.bas_page1 h1, .bas_page2 h1
+{
+	color : black;
+	font-family : Arial;
+	font-weight : normal;
+	font-size : 1.3em;
+}
+.bas_page1, .bas_page2
+{
+	width : 45%;
+	height : 200px;
+}
+
+.bas_page1 img
+{
+	border : 1px solid black;
+	vertical-align : top;
+}
+table
+{
+	border-collapse : collapse;
+}
+td, th
+{
+	border : 1px solid black;
+	padding : 2px 5px 2px 5px;
+}
+.bas_page2 a
+{
+	color : teal;
+	text-decoration : none;
+}
+.bas_page2 a:hover
+{
+	color : red;
+	text-decoration : underline;
+	font-weight : bold;
+}
+.imgflottante
+{
+	float : right;
+	margin-left : 10px;
+}
+.imgflottante1
+{
+	float : left;
+	margin-right : 10px;
+}
+.clear
+{
+	clear : both;
+}
+/* Stylesheet pour les articles du moments*/
+#articleny
+{
+	width : 99%;
+}
+.banniere 
+{
+	Height : 200px;
+	border-radius : 5px;
+}
+/* Stylesheet pour les contacts (formulaire)*/
+#coordonnées
+{
+	display : flex;
+	flex-flow : column-reverse;
+	justify-content : flex-end;
+}
+input[type="range"] /* afficher les chiffres sur le curseur du formulaire*/
+{
+    position: relative;
+    margin-left: 1em;
+}
+input[type="range"]:after,
+input[type="range"]:before 
+{
+    position: absolute;
+    top: 1em;
+    color: black;
+}
+input[type="range"]:before 
+{
+    left:0em;
+    content: attr(min);
+}
+input[type="range"]:after 
+{
+    right: 0em;
+    content: attr(max);
+}
+#envoyer
+{
+	text-align : center;
+}
+/*Stylesheet pour le CV*/
+#colonneCV
+{
+	width : 30%;
+	height : 900px;
+	display : flex;
+	flex-flow : column;
+	justify-content : flex-start;
+	position : relative;
+	border : 3px dotted black;
+	border-radius : 20px;
+	padding : 5px;	
+}
+#CV
+{
+	display : flex;
+	flex-flow : row; 
+	position : relative;
+	background-color : white;
+	margin :auto;
+}
+#resteCV
+{
+	width : 65%;
+	height : 800px;
+	display : flex;
+	flex-flow : column;
+	justify-content : flex-start;
+	margin-left : 15px;
+	padding : 5px;
+}
+#titreCV
+{
+	width : 99%;
+	position : absolute;
+	top : 100px;
+	right : 3px;
+	text-align : center;
+	color : white;
+	background-image : url('images/bleu.png');
+	z-index : 2;
+	border-radius : 10px;
+	box-shadow : 2px 2px 4px black;
+	text-shadow : 2px 2px 4px black
+	
+}
+#titreCV h2
+{
+	font-size : 1em;
+}
+#mescoordCV, #mescoordCV1
+{
+	height : 220px;
+}
+#mescoordCV1
+{
+	text-align : right;
+}
+span
+{
+	font-weight : bold;
+	text-decoration : underline;
+}
+.exppro h1
+{
+	font-size : 1em;
+}
+.formationCV h1
+{
+	font-weight : bold;
+	font-size : 1em;
+	font-style : none;
+}

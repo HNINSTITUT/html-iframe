@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="style.css" />
+		<title> Contact </title>
+	</head>
+	
+	<body>
+		
+				<p> Si vous souhaiter me contacter ou que je vous contacte directement, ou encore être notifié
+				des nouveaux articles qui paraissent, vous pouvez me laisser vos coordonnées et vos 
+				souhaits en remplissant le formulaire suivant. <br/>
+				Je vous dis à bientôt ! </p>
+				
+				<form method="post" action="http://vip46.groupehn.com:20003/html/infospost.php">
+				<fieldset id="coordonnées">
+					<legend> Vos coordonnées </legend>
+					
+					<label for="nom"> Votre nom </label> 
+					<input type="text" name="nom" id="nom" required autofocus /> <br />
+					<label for="prénom"> Votre prénom </label>
+					<input type="text" name="prénom" id="prénom" /> <br />
+					<label for="tel"> Votre numéro de téléphone </label>
+					<input type="tel" name="tel" id="tel" /> <br />
+					<label for="email"> Votre adresse mail </label>
+					<input type="email" name="email" id="email" required /> <br />
+					<label for="url"> Votre site/page/tout ce que vous voulez </label>
+					<input type="url" name="url" id="url" /> <br />
+					<label for="naissdate"> Votre date de naissance </label>
+					<input type="date" name="naissdate" id="naissdate" /> <br />
+					
+					<label for="ville"> La ville où vous habitez </label>
+					<select name="ville" id="ville" />
+						<option value="Paris"> Paris </option>
+						<option value="Strasbourg"> Strasbourg </option>
+						<option value="Lyon"> Lyon </option>
+						<option value="Toulouse"> Toulouse </option>
+						<option value="Nantes"> Nantes </option>
+						<option value="Lille"> Lille </option>
+						<option value="Marseille"> Marseille </option>
+						<option value="Autres"> Autres </option>
+					</select>
+				</fieldset>
+				
+				<fieldset>
+					<legend> Vos souhaits </legend>
+					
+					<p> Par quels moyens souhaitez-vous être notifié des nouveaux articles et autres nouveautés ? <br />
+						<input type="checkbox" name="notif" id="mail"> <label for="mail"> Email </label> <br />
+						<input type="checkbox" name="notif" id="téléphone"> <label for="téléphone"> Tel </label> <br />
+						<input type="checkbox" name="notif" id="newsletter"> <label for="newsletter"> Newsletter </label> 
+					</p>
+					<p> Souhaitez-vous être contacté ? <br />
+						<input type="radio" name="contact" value="oui" id="oui"> <label for="oui"> Oui </label> <br />
+						<input type="radio" name="contact" value="non" id="non"> <label for="non"> Non </label>
+					</p>
+					<p> Avez-vous des commentaires à faire à propos du site (améliorations possibles, avis) ? <br />
+						<textarea name="comment" rows="10" cols="50" > A vous de jouer </textarea>
+					</p>
+					<p> Quel note (entre 1 et 5) donneriez-vous à ce site ? <br />
+						<input type="range" name="note" min="1" max="5" step="1">
+					</p>
+				</fieldset> 
+				<input type="submit" value="envoyer" id="envoyer">
+				</form>
+			
+	</body>
+</html>
+						
+					
+					
+					
+					
